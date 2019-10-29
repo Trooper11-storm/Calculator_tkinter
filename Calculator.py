@@ -2,8 +2,8 @@ from tkinter import *
 
 calc = Tk()
 calc.title("Simple Calculator")
-
-e = Entry(calc, width=35, borderwidth=5)
+font_size = ("Verdana", 30)
+e = Entry(calc, width=10, borderwidth=5, font=font_size)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 def button_click(number):
@@ -74,10 +74,10 @@ button_0 = Button(calc, text="0", padx=40, pady=20, command=lambda: button_click
 
 button_add = Button(calc, text="+", padx=40, pady=20, command=button_add)
 button_subtract = Button(calc, text="-", padx=41, pady=20, command=button_subtract)
-button_multiply = Button(calc, text="*", padx=40, pady=20, command=button_multiply)
-button_divide = Button(calc, text="/", padx=40, pady=20, command=button_divide)
-button_equal = Button(calc, text="=", padx=98, pady=20, command=button_equal)
-button_clear = Button(calc, text="Clear", padx=86, pady=20, command=button_clear)
+button_multiply = Button(calc, text="*", padx=41, pady=20, command=button_multiply)
+button_divide = Button(calc, text="/", padx=41, pady=20, command=button_divide)
+button_equal = Button(calc, text="=", padx=88, pady=20, command=button_equal)
+button_clear = Button(calc, text="Clear", padx=75, pady=20, command=button_clear)
 
 #put buttons on screen
 button_1.grid(row=3, column=0)
